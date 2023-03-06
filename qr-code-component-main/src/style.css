@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?display=swap');
+
+
+:root{
+    --colorCard: hsl(220, 15%, 55%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilidades */
+
+.cborder{
+    border-radius: 1rem;
+}
+
+/* Globales */
+
+h3{
+    color: var(--DarkBlue);
+    font-size: 25px;
+    font-weight: 700;
+}
+p{
+    color: var(--GrayishBlue);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Clases */
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--LightGray);
+    justify-content: center;
+    align-items: center;
+}
+
+.card{     
+    display: flex;
+    flex-direction: column;
+    min-height:39rem;
+    width: 25rem;
+    background-color: var(--White);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.qr{
+    height: 22rem;
+    background: url(../images/image-qr-code.png) center;
+    background-size: cover;
+}
+.info{
+    display: flex;
+    min-height: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+    .card{
+        min-height: 30rem;
+    }
+}
